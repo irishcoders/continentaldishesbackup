@@ -1,6 +1,6 @@
 # Continental Dishes Order Placer and Receipt Generator App
 
-![Continental Dishes Header](/images/continentaldishesapp_header.png)
+![Continental Dishes Header](assets/images/continentaldishesapp_header.png)
 
 [Continental Dishes Order Placer and Receipt Generator](https://continentaldishesreceipt-b3656c136b51.herokuapp.com/) App is a simple Python application that allows customers to select menu items, specify quantities, and generate a receipt for their orders. This application is designed for restaurants or food service businesses to streamline the ordering process.
 
@@ -24,55 +24,55 @@ The Continental Dishes Order Placer and Receipt Generator aims to provide a smoo
 
 ### Welcome Message
 The program starts with a large and fancy welcome message created using [PyFiglet](https://pypi.org/project/pyfiglet/0.7/). After displaying the welcome message, it proceeds to display the list of menu items.
-![Continental Dishes Header](/images/continentaldishesapp_header.png)
+![Continental Dishes Header](assets/images/continentaldishesapp_header.png)
 
 ### Display Menu
 
 The menu is displayed in a tabulated format using [Tabulate](https://pypi.org/project/tabulate/), showing the item numbers, item names, and prices in an appealing tablulated order
 
-![Continental Dishes Display Menu](/images/continetaldishesapp_menu_list.png)
+![Continental Dishes Display Menu](assets/images/continetaldishesapp_menu_list.png)
 
 ### Main Order Placement
 
 The user is prompted to enter the item number they want to order. If the input is within the menu range of 1 - 10, the user is then asked for the quantity. If the quantity is greater than zero, the item is added to the order. Error messages are displayed for invalid input or quantity less than or equal to zero.
 
-![Continental Dishes Adding Orders](/images/continentaldishes_adding_orders.png)
+![Continental Dishes Adding Orders](assets/images/continentaldishes_adding_orders.png)
 
 ### Generating Receipt
 
 The app instructs the user to enter 0 to confirm the end of order. Once the user finishes ordering and enters '0', the program generates a receipt for the order. This receipt shows the quantity, item name, and the total cost for each ordered item. The total cost of the order is also displayed in a fancy visually appealing yellow using another Python Library called [Colorama](https://pypi.org/project/colorama/)
 
-![Continental Dishes Receipt](/images/continentaldishes_receipt.png)
+![Continental Dishes Receipt](assets/images/continentaldishes_receipt.png)
 
 ### Main Order Error Handling
 
 The program uses error handling to manage user input. If the user enters an invalid item number, quantity, or any other invalid input, it displays a red error message indicating what went wrong. The user is prompted to enter valid input.
 
-![Continental Dishes Main Order Errors](/images/continentaldishes_main_order_error.png)
+![Continental Dishes Main Order Errors](assets/images/continentaldishes_main_order_error.png)
 
 ### Additional Orders
 
 After the receipt is generated, the user is then asked if they would like to order more items with the option to type in either 'yes' or 'no'. If the user enters 'yes', the menu is displayed again, and they can place additional orders. These orders are appended to the existing order.
 
-![Continental Dishes Additional Orders](/images/continentaldishes_additional_orders.png)
+![Continental Dishes Additional Orders](assets/images/continentaldishes_additional_orders.png)
 
 ### Order Completion 
 
 If the user enters 'no', the program proceeds to thank the user for their order and suggests paying at the counter and enjoy their meal.
 
-![Continental Dishes Additional Orders](/images/continentaldishes_no_additional_orders.png)
+![Continental Dishes Additional Orders](assets/images/continentaldishes_no_additional_orders.png)
 
 ### Additional Orders Error Handling
 
 If the user types in any other input which is not 'yes' or 'no', the app informs them that an invalid input has been entered and displays the message again asking them if they would like to add more orders to their existing order
 
-![Continental Dishes Additional Orders Invalid Input](/images/continentaldishes_additional_orders_invalid_input.png)
+![Continental Dishes Additional Orders Invalid Input](assets/images/continentaldishes_additional_orders_invalid_input.png)
 
 ### Exiting The App
 
 The program then exits using Python Library `sys.exit()` after all operations are complete. All operations are complete when the user types 'no', the final receipt has been generated and the app instructs the user to pay at the counter.
 
-![Continental Dishes System Exit](/images/continentaldishes_system_exit.png)
+![Continental Dishes System Exit](assets/images/continentaldishes_system_exit.png)
 
 ## Color Arrangements
 
@@ -158,7 +158,7 @@ I had serious issues when writing the additional order code. The `order_extra` f
 
 [Pep8 Online](https://pep8ci.herokuapp.com/) was used for validating the python files and all errors reported were fixed before deployment.
 
-![Pep8 Online](/images/pep8_online.png)
+![Pep8 Online](assets/images/pep8_online.png)
 
 ## Installation
 
